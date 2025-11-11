@@ -1,0 +1,28 @@
+.app {
+    min-height: 100vh;
+    background: #ffffff;
+    color: #2d3748;
+    transition: all 0.3s ease;
+}
+
+.main {
+    min-height: 100vh;
+}
+
+.footer {
+    background: #f7fafc;
+    padding: 2rem 0;
+    text-align: center;
+    border-top: 1px solid #e2e8f0;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.footer p {
+    color: #718096;
+    margin: 0;
+}

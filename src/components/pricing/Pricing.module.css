@@ -1,0 +1,283 @@
+.pricing {
+    padding: 100px 0;
+    background: #ffffff;
+    transition: all 0.3s ease;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.header {
+    text-align: center;
+    margin-bottom: 4rem;
+}
+
+.title {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #2d3748;
+    margin-bottom: 1rem;
+}
+
+.subtitle {
+    font-size: 1.2rem;
+    color: #718096;
+    max-width: 600px;
+    margin: 0 auto 2rem;
+    line-height: 1.6;
+}
+
+.billingToggle {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    font-weight: 600;
+}
+
+.billingToggle span {
+    color: #718096;
+    transition: color 0.3s ease;
+}
+
+.billingToggle span.active {
+    color: #2d3748;
+}
+
+.discount {
+    background: #48bb78;
+    color: white;
+    padding: 2px 8px;
+    border-radius: 12px;
+    font-size: 0.8rem;
+    margin-left: 0.5rem;
+}
+
+.toggleSwitch {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 30px;
+}
+
+.toggleSwitch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.toggleSwitch label {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: #cbd5e0;
+    transition: 0.3s;
+    border-radius: 34px;
+}
+
+.toggleSwitch label:before {
+    position: absolute;
+    content: "";
+    height: 22px;
+    width: 22px;
+    left: 4px;
+    bottom: 4px;
+    background: white;
+    transition: 0.3s;
+    border-radius: 50%;
+}
+
+.toggleSwitch input:checked+label {
+    background: #667eea;
+}
+
+.toggleSwitch input:checked+label:before {
+    transform: translateX(30px);
+}
+
+.pricingGrid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    margin-bottom: 3rem;
+}
+
+.pricingCard {
+    background: white;
+    padding: 2.5rem;
+    border-radius: 20px;
+    border: 2px solid #e2e8f0;
+    position: relative;
+    transition: all 0.3s ease;
+}
+
+.pricingCard:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+}
+
+.pricingCard.popular {
+    border-color: #667eea;
+    transform: scale(1.05);
+}
+
+.pricingCard.popular:hover {
+    transform: scale(1.05) translateY(-5px);
+}
+
+.popularBadge {
+    position: absolute;
+    top: -12px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    padding: 5px 20px;
+    border-radius: 15px;
+    font-size: 0.8rem;
+    font-weight: 600;
+}
+
+.planHeader {
+    text-align: center;
+    margin-bottom: 2rem;
+    padding-bottom: 2rem;
+    border-bottom: 1px solid #e2e8f0;
+}
+
+.planName {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #2d3748;
+    margin-bottom: 1rem;
+}
+
+.planPrice {
+    display: flex;
+    align-items: baseline;
+    justify-content: center;
+    gap: 0.2rem;
+    margin-bottom: 0.5rem;
+}
+
+.currency {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #667eea;
+}
+
+.amount {
+    font-size: 3rem;
+    font-weight: 700;
+    color: #2d3748;
+}
+
+.period {
+    color: #718096;
+    font-weight: 500;
+}
+
+.billingNote {
+    color: #48bb78;
+    font-size: 0.9rem;
+    margin: 0 0 1rem 0;
+    font-weight: 500;
+}
+
+.planDescription {
+    color: #718096;
+    font-size: 0.9rem;
+    margin: 0;
+}
+
+.featuresList {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 2rem 0;
+}
+
+.featureItem {
+    display: flex;
+    align-items: center;
+    gap: 0.8rem;
+    padding: 0.8rem 0;
+    color: #4a5568;
+    border-bottom: 1px solid #f7fafc;
+}
+
+.featureItem:last-child {
+    border-bottom: none;
+}
+
+.checkIcon {
+    color: #48bb78;
+    font-weight: bold;
+    flex-shrink: 0;
+}
+
+.ctaButton {
+    width: 100%;
+    padding: 15px;
+    border: none;
+    border-radius: 10px;
+    font-weight: 600;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.ctaButton.primary {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+}
+
+.ctaButton.primary:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(102, 126, 234, 0.4);
+}
+
+.ctaButton.secondary {
+    background: transparent;
+    color: #667eea;
+    border: 2px solid #667eea;
+}
+
+.ctaButton.secondary:hover {
+    background: #667eea;
+    color: white;
+    transform: translateY(-2px);
+}
+
+.footer {
+    text-align: center;
+}
+
+.footer p {
+    color: #718096;
+    margin: 0;
+}
+
+@media (max-width: 768px) {
+    .pricingGrid {
+        grid-template-columns: 1fr;
+    }
+
+    .pricingCard.popular {
+        transform: none;
+    }
+
+    .pricingCard.popular:hover {
+        transform: translateY(-5px);
+    }
+
+    .billingToggle {
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+}

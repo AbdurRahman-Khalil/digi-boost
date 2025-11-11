@@ -1,0 +1,152 @@
+.about {
+    padding: 100px 0;
+    background: #ffffff;
+    transition: all 0.3s ease;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.header {
+    text-align: center;
+    margin-bottom: 4rem;
+}
+
+.title {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #2d3748;
+    margin-bottom: 1rem;
+}
+
+.subtitle {
+    font-size: 1.2rem;
+    color: #718096;
+    max-width: 600px;
+    margin: 0 auto;
+    line-height: 1.6;
+}
+
+.content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 4rem;
+    align-items: start;
+}
+
+.feature {
+    display: flex;
+    align-items: flex-start;
+    gap: 1.5rem;
+    margin-bottom: 2.5rem;
+    padding: 1.5rem;
+    border-radius: 15px;
+    background: #f7fafc;
+    transition: all 0.3s ease;
+}
+
+.feature:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+.featureIcon {
+    font-size: 2rem;
+    flex-shrink: 0;
+}
+
+.featureText h3 {
+    color: #2d3748;
+    margin: 0 0 0.5rem 0;
+    font-size: 1.3rem;
+}
+
+.featureText p {
+    color: #718096;
+    margin: 0;
+    line-height: 1.6;
+}
+
+.visualContent {
+    padding: 2rem;
+}
+
+.timeline {
+    position: relative;
+    padding-left: 2rem;
+}
+
+.timeline::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    width: 2px;
+    background: linear-gradient(to bottom, #667eea, #764ba2);
+}
+
+.timelineItem {
+    position: relative;
+    margin-bottom: 2rem;
+}
+
+.timelineItem:last-child {
+    margin-bottom: 0;
+}
+
+.timelineYear {
+    position: absolute;
+    left: -3rem;
+    top: 0;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    padding: 0.5rem 1rem;
+    border-radius: 20px;
+    font-weight: 600;
+    font-size: 0.9rem;
+}
+
+.timelineContent {
+    background: #f7fafc;
+    padding: 1.5rem;
+    border-radius: 10px;
+    margin-left: 1rem;
+}
+
+.timelineContent h4 {
+    color: #2d3748;
+    margin: 0 0 0.5rem 0;
+    font-size: 1.1rem;
+}
+
+.timelineContent p {
+    color: #718096;
+    margin: 0;
+    font-size: 0.9rem;
+}
+
+@media (max-width: 768px) {
+    .content {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+
+    .feature {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .timeline {
+        padding-left: 1rem;
+    }
+
+    .timelineYear {
+        left: -2.5rem;
+        padding: 0.3rem 0.8rem;
+        font-size: 0.8rem;
+    }
+}
